@@ -2,7 +2,7 @@ class WoofersController < ApplicationController
 
 def index
 @woofers = Woofer.all
-render json: @woofers.shuffle
+render json: @woofers.shuffle, include: [:luvs, :users]
 end
 
 def update

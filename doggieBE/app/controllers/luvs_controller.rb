@@ -2,13 +2,13 @@ class LuvsController < ApplicationController
 
 def index
 @luvs = Luv.all
-render json: @luvs 
+render json: @luvs, include: [:woofer, :user] 
 end
 
 def create
 @luv = Luv.create(luv_params)
 if @luv.valid?
-    render json: @luv
+    render json: @luv, include: [:woofer, :user]
 else
     render json: @luv.errors.full_messages
 end
