@@ -14,6 +14,12 @@ else
 end
 end
 
+def destroy
+@luv = Luv.find(params[:id])
+@luv.destroy
+render json: @luv
+end
+
 private
 
 def luv_params
