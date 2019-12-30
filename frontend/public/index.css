@@ -1,0 +1,77 @@
+
+.upcoming {
+  max-width: 25vw;
+  max-height: 25vw;
+}
+
+#dog-bar-left {
+  display: list-item;
+  justify-items: center;
+  float: left;;
+}
+
+#right-dog-bar {
+  /* display: list-item; */
+  justify-items: stretch;
+  /* float: right;
+  padding: 2%;
+  width: 26%;  */
+}
+
+
+ img {
+  max-width: 25vw;
+  max-height: 25vw;
+  justify-items: stretch;
+}
+
+body {
+  margin: 0;
+}
+
+#title {
+  text-align: center;
+}
+
+#form-container {
+  align-items: center;
+}
+
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  display: flex;
+}
+
+form {
+  display: grid;
+}
+
+a {
+  border: darkorchid;
+  padding: 0.3rem;
+  border-style: solid;
+  fill: darkred;
+}
+
+/* .upcoming-holder {
+  border: 0.5rem;
+  border-style: groove;
+} */
+
+*{
+  font-family: baskerville;
+  font-weight: bold;
+}
+
+body {
+  background-image: url(https://www.tokkoro.com/picsup/2808041-nature-landscape-dog-mountain-himalayas___landscape-nature-wallpapers.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: darkolivegreen;
+}
